@@ -858,7 +858,7 @@ int uvc_start(void)
 	/*
 	 * Wait until LiveArea is more or less ready.
 	 */
-	ksceKernelDelayThreadCB(5 * 1000 * 1000);
+	ksceKernelDelayThreadCB(10 * 1000 * 1000);
 #endif
 
 	ret = ksceUdcdDeactivate();
